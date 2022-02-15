@@ -1,0 +1,51 @@
+* {
+  display: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* general styling */
+body {
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+/* Grid */
+body {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'user-list chat-window'
+    'footer footer';
+    grid-template-columns: minmax(auto, 10em) 3fr;
+
+}
+
+.header {
+  grid-area: header;
+  min-height: 50px;
+  background: rgb(255, 239, 8);
+}
+
+.user-list {
+  grid-area: user-list;
+  background: rgb(219, 162, 196);
+}
+
+.chat-window {
+  grid-area: chat-window;
+  background: rgb(191, 237, 233);
+}
+
+.user-list, .chat-window {
+  overflow-y: auto;
+}
+
+.footer {
+  grid-area: footer;
+  min-height: 100px;
+  background: rgb(179, 227, 130);
+}
