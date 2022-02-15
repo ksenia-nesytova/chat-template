@@ -27,6 +27,7 @@ body {
 .header {
   grid-area: header;
   background: rgb(255, 239, 8);
+  text-align: center;
 }
 
 .user-list {
